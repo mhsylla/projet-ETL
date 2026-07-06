@@ -1,16 +1,16 @@
-# 🏆 Projet ETL & Data Science — Prédiction Coupe du Monde 2026
+# Projet ETL & Data Science — Prédiction Coupe du Monde 2026
 
 > Pipeline de données de bout en bout : de l'historique brut des matchs (1930–2022) à la prédiction du vainqueur 2026 par Intelligence Artificielle, le tout visualisé sur un Dashboard interactif.
 
 ---
 
-## 🎯 Objectif du Projet
+## Objectif du Projet
 
 Ce projet répond à une question analytique ambitieuse :
 
 > **Est-il possible d'identifier les futurs favoris d'une Coupe du Monde à partir de l'historique sportif et géopolitique ?**
 
-Pour y répondre, nous avons conçu un **Écosystème Data Complet** (Data Engineering ➔ Business Intelligence ➔ Data Science) divisé en 5 phases :
+Pour y répondre, nous avons conçu un **Écosystème Data Complet** (Data Engineering -> Business Intelligence -> Data Science) divisé en 5 phases :
 1. **Extract** : Récupération de données brutes sur Kaggle.
 2. **Transform** : Nettoyage, harmonisation géopolitique et Feature Engineering avec Pandas.
 3. **Load** : Création dynamique d'un Data Warehouse (SQLite) en Schéma en Étoile.
@@ -19,7 +19,7 @@ Pour y répondre, nous avons conçu un **Écosystème Data Complet** (Data Engin
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```text
 projet-ETL/
@@ -43,7 +43,7 @@ projet-ETL/
 
 ---
 
-## 🚀 Démarrage Rapide
+## Démarrage Rapide
 
 ### 1. Prérequis et Installation
 
@@ -75,7 +75,7 @@ streamlit run dashboard/app.py
 
 ---
 
-## 🧠 Modélisation de Données (Schéma en Étoile)
+## Modélisation de Données (Schéma en Étoile)
 
 Notre Data Warehouse repose sur une architecture optimisée pour la Business Intelligence (Constellation de faits) :
 
@@ -84,7 +84,7 @@ Notre Data Warehouse repose sur une architecture optimisée pour la Business Int
 
 ---
 
-## 🤖 Prédiction 2026 (Machine Learning)
+## Prédiction 2026 (Machine Learning)
 
 ### Méthodologie
 - **Modèle** : `RandomForestClassifier`
@@ -92,15 +92,15 @@ Notre Data Warehouse repose sur une architecture optimisée pour la Business Int
 - **Data Leakage** : Évité en calculant strictement les statistiques d'une équipe *avant* le début de chaque édition historique.
 
 ### Résultats (Top 3 des probabilités Top 4)
-1. 🇺🇸 **États-Unis** (76.2%) - Fortement poussé par l'avantage statistique du pays organisateur.
-2. 🇲🇽 **Mexique** (70.9%)
-3. 🇪🇸 **Espagne** (70.6%)
+1. **États-Unis** (76.2%) - Fortement poussé par l'avantage statistique du pays organisateur.
+2. **Mexique** (70.9%)
+3. **Espagne** (70.6%)
 
 *(Le cas très spécifique du Brésil, sanctionné par le modèle à cause de ses récents échecs en quart de finale malgré de fortes statistiques, est expliqué dans nos analyses comme un cas de surapprentissage "Outlier").*
 
 ---
 
-## 📈 Dashboard (Business Intelligence)
+## Dashboard (Business Intelligence)
 
 L'application Streamlit contient 8 pages d'analyses approfondies :
 1. Vue Globale (Exploration du Data Warehouse)
